@@ -14,8 +14,7 @@ export const HeaderContent = styled.div`
 `;
 
 export const HeaderItems = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: flex-start;
   height: 200vh;
@@ -27,8 +26,7 @@ export const HeaderItems = styled.div`
   font-weight: bold;
   @media screen and (max-width: 650px) {
     width: 100%;
-  }
-`;
+  }`;
 
 export const HeaderH1 = styled.h1`
   font-size: 70px;

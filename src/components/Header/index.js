@@ -24,11 +24,11 @@ const Header = () => {
             <HeaderContent>
                 <HeaderItems>
                     <HeaderH1>Mens wear</HeaderH1>
-                    <HeaderP>Accessories</HeaderP>
-                    <HeaderP>ASOS Basic Tops</HeaderP>
+                    <HeaderP>Shirts</HeaderP>
+                    <HeaderP>Jeans</HeaderP>
                     <HeaderP>Bags</HeaderP>
                     <HeaderP>Caps & Hats</HeaderP>
-                    <HeaderP>Gifts</HeaderP>
+                    <HeaderP>Shoes</HeaderP>
                     <HeaderP>Grooming</HeaderP>
                 </HeaderItems>
             </HeaderContent>
