@@ -1,18 +1,20 @@
 import React from 'react';
-import './App.css';
-import Header1 from './components/Header1' ;
-import Header2 from "./components/Header2";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { GlobalStyle } from './globalStyles';
+import Header from './components/Header';
+import Products from './components/Products';
+import { productData } from './components/Products/data';
+import Footer from './components/Footer';
 
 function App() {
-  return (
-      <div className="App">
-        <Header1/>
-          <Header2/>
-      </div>
-
-  );
+    return (
+        <Router>
+            <GlobalStyle />
+            <Header />
+            <Products data={productData} />
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;
