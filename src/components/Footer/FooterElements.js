@@ -25,23 +25,12 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 16px auto 0 auto;
+  margin-left: 50px;
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
 `;
 
-export const SocialLogo = styled(Link)`
-  color: #fff;
-  justify-self: start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  font-weight: bold;
-`;
 
 export const SocialIcons = styled.div`
   display: flex;
