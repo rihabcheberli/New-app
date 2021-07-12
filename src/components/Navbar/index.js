@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Nav2, NavLink, NavIcon, Bars, Left, Middle, Right, Bag } from './NavbarElements';
-import Login from "../../containers/Login/Login";
+import Login from "../Login/Login";
+import Register from "../Register/Register";
 import {
     BrowserRouter as Router,
     Switch,
@@ -9,13 +10,12 @@ import {
 } from "react-router-dom";
 
 const Navbar = ({ toggle }) => {
-    return (
-            <Router>
+    return (<>
             <Nav>
                 <Left><h1>Hi!</h1></Left>
                 <Left><NavLink to="/Login">Sign in</NavLink></Left>
                 <Left><h1>or</h1></Left>
-                <Left><NavLink to='/'>Register</NavLink></Left>
+                <Left><NavLink to='/Register'>Register</NavLink></Left>
                 <h1><Middle>Daily Deals</Middle></h1>
                 <h1><Middle>Sell</Middle></h1>
                 <h1><Middle>Help & Contact</Middle></h1>
@@ -23,7 +23,7 @@ const Navbar = ({ toggle }) => {
             </Nav>
 
             <Nav2>
-                <Left><NavLink to='/'>SHOPMATE</NavLink></Left>
+                <Left><NavLink to='/Home'>SHOPMATE</NavLink></Left>
                 <h1><Middle>Women</Middle></h1>
                 <h1><Middle>Men</Middle></h1>
                 <h1><Middle>Kids</Middle></h1>
@@ -33,10 +33,17 @@ const Navbar = ({ toggle }) => {
                     <h1><Bars /></h1>
                 </NavIcon>
             </Nav2>
-                <Switch>
-                    <Route path="/Login" component={Login}/>
-                </Switch>
-            </Router>
+    <Router>
+            <Switch>
+            <Route exact path="/Login">
+                <Login />
+            </Route>
+                <Route exact path="/Register">
+                    <Register />
+                </Route>
+            </Switch>
+        </Router>
+    </>
     );
 };
 

@@ -21,6 +21,7 @@ export const NavLink = styled(Link)`
   color: #F62F5E;
   display: flex;
   align-items: center;
+  text-decoration: none;
   @media screen and (max-width: 400px) {
     position: absolute;
     top: 10px;
