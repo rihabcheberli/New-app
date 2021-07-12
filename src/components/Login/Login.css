@@ -14,8 +14,7 @@ body {
     font-weight: 400;
     font-family: sans-serif;
     background: #12c2e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f64f59);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 
 }
 
@@ -43,7 +42,7 @@ body {
 }
 
 .outer .form-control:focus {
-    border-color: #167bff;
+    border-color: #f62f5e;
     box-shadow: none;
 }
 
@@ -68,5 +67,5 @@ body {
 }
 
 .forgot-password a {
-    color: #167bff;
+    color:  #f62f5e;
 }
