@@ -1,12 +1,19 @@
 import React from 'react';
 import { Nav, Nav2, NavLink, NavIcon, Bars, Left, Middle, Right, Bag } from './NavbarElements';
+import Login from "../../containers/Login/Login";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 const Navbar = ({ toggle }) => {
     return (
-        <>
+            <Router>
             <Nav>
                 <Left><h1>Hi!</h1></Left>
-                <Left><NavLink to='/'>Sign in</NavLink></Left>
+                <Left><NavLink to="/Login">Sign in</NavLink></Left>
                 <Left><h1>or</h1></Left>
                 <Left><NavLink to='/'>Register</NavLink></Left>
                 <h1><Middle>Daily Deals</Middle></h1>
@@ -26,7 +33,10 @@ const Navbar = ({ toggle }) => {
                     <h1><Bars /></h1>
                 </NavIcon>
             </Nav2>
-        </>
+                <Switch>
+                    <Route path="/Login" component={Login}/>
+                </Switch>
+            </Router>
     );
 };
 
